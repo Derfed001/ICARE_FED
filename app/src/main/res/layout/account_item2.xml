@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/search_bg"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/img1cat"
+            android:layout_gravity="center"
+            android:src="@drawable/hunger"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold"
+                android:textColor="#40b4f1"
+                android:id="@+id/name1cat"
+                android:text="Donations towards feeding the starving people in Samburu county"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/descr1cat"
+                android:text="Description"/></LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

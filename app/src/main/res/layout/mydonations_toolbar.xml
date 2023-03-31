@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:background="#40B4F1"
+    android:padding="12dp"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/toolbar_account"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="My Donations"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginStart="80dp"/>
+
+</LinearLayout>

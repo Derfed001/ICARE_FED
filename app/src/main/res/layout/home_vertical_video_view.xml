@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <VideoView
+            android:id="@+id/videoView_vertical"
+            android:layout_width="203dp"
+            android:layout_height="176dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="204dp"
+            android:background="@drawable/resend_code_drawable"
+            android:scaleType="fitCenter"
+            android:src="@drawable/givingclothes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintVideoView_vertical"
+            android:layout_width="182dp"
+            android:layout_height="172dp"
+            android:background="@drawable/resend_code_drawable"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/videoView_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <TextView
+                android:id="@+id/requestVideoView_vertical"
+                android:layout_width="170dp"
+                android:layout_height="71dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/resend_code_drawable"
+                android:text="Help feed hungry comrades at Kisii University"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#0C0C0C"
+                android:textColorHint="#070707"
+                android:textColorLink="#040303"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/beneficiaryVideoView_vertical"
+                android:layout_width="153dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="21dp"
+                android:background="@drawable/resend_code_drawable"
+                android:paddingStart="5dp"
+                android:text="Eric Mwenda"
+                android:textColor="@color/black"
+                android:textColorHighlight="#040303"
+                android:textColorHint="#090909"
+                android:textColorLink="#050505"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/requestVideo_period"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/requestVideoView_vertical" />
+
+            <TextView
+                android:id="@+id/requestVideo_period"
+                android:layout_width="112dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="61dp"
+                android:layout_marginEnd="9dp"
+                android:paddingStart="10dp"
+                android:text="2 days ago"
+                android:background="@drawable/resend_code_drawable"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHighlight="#050505"
+                android:textColorHint="#090909"
+                android:textColorLink="#090808"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/beneficiaryVideoView_vertical"
+                app:layout_constraintVertical_bias="0.5" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

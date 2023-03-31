@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonateMeActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/requestVertical2"
+        android:layout_width="412dp"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/njaa_ke" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Help fight hunger in the North"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+   <!-- <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/search_bg"
+        android:layout_height="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+    <TextView
+        android:id="@+id/textViewDonators"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="start"
+        android:layout_marginStart="5dp"
+        android:text="5000 Donors"
+        android:textColor="#40b4f1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />-->
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="end"
+        android:text="10 days left"
+        android:textColor="#40b4f1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView42"
+        app:srcCompat="@drawable/ic_baseline_share_24"
+        tools:layout_editor_absoluteY="380dp" />
+
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Donating towards the starving North region of Kenya to reduce malnutrition and deaths"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView44"
+        tools:layout_editor_absoluteY="509dp" />
+
+    <Button
+        android:id="@+id/button_do"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Donate"
+        android:textAllCaps="false"
+        android:background="@drawable/loginbutton"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView40" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView54"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+  <!--  <TextView
+        android:id="@+id/textView51"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:gravity="start"
+        android:text="Ksh.5000"
+        android:textColor="#40b4f1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="end"
+        android:text="Ksh.10000"
+        android:textColor="#40b4f1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"/>-->
+            <TextView
+                android:id="@+id/ben_name"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="start"
+                android:paddingTop="2dp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:text="Beneficiary name"
+                android:textSize="16sp"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="start"
+        android:text="Mwenda Eric"
+        android:layout_marginStart="5dp"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#40b4f1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ben_name" />
+            <TextView
+                android:id="@+id/ben_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="start"
+                android:paddingTop="2dp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:text="Beneficiary Contact"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+            <TextView
+        android:id="@+id/textView54"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="start"
+                android:layout_marginTop="5dp"
+        android:text="0791088006"
+                android:layout_marginStart="5dp"
+        android:textSize="16sp"
+        android:textColor="#40b4f1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ben_contact" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

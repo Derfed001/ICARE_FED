@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinishActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:id="@+id/linearhome"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/moreRequests"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="#40b4f1"
+            android:text="You have successfully donated on ICARE CHARITY"
+            android:layout_marginRight="7dp"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:riv_corner_radius="14dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:id="@+id/ver_ing"
+            android:src="@drawable/decorum"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:id="@+id/moreRequest"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:text="Thank you for touching a soul through your donation in ICARE. You are welcomed again to for your generousity and philanthropical spirit."
+            android:layout_marginRight="7dp"/>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

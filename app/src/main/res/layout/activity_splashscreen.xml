@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SplashscreenActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/spla" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="25dp"
+        android:paddingStart="24dp"
+        android:text="Trusted, transparent and effective for charity activities "
+        android:textAlignment="center"
+        android:textColor="#40B4F1"
+        android:textDirection="anyRtl"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/splashNext"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/proceed_btn"
+        android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+        android:text="Proceed to login"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"/>
+
+
+
+
+
+</LinearLayout>

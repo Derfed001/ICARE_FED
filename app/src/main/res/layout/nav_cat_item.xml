@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="7dp"
+    android:elevation="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/border"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/chakula"
+            android:id="@+id/img_cat"/>
+        <TextView
+            android:id="@+id/name_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Hunger"
+            android:textAlignment="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textColor="#40b4f1"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

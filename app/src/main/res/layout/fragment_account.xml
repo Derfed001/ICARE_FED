@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/border"
+    android:orientation="vertical"
+    tools:context=".AccountFragment">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="User Profile"
+            android:textAlignment="center"
+            android:textColor="#40b4f1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="12dp"/>
+
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="4dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:cardPreventCornerOverlap="false"
+            android:layout_margin="1dp"
+            android:layout_gravity="center_vertical"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="4dp">
+            <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:clickable="true"
+                android:scaleType="fitCenter"
+
+                    android:id="@+id/click_profile"
+                    android:src="@drawable/ic_baseline_account_circle_24"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp">
+
+
+
+                <TextView
+                    android:id="@+id/prof_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingTop="1dp"
+                    android:text="Eric Mwenda"
+
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/prof_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingTop="6dp"
+                    android:text="mwendaeric@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/prof_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingTop="1dp"
+                    android:text="0791088006"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+
+       <!-- <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_baseline_account_circle_24"/>-->
+      <!--  <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:id="@+id/recyclerProfile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"/>-->
+
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/profil3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp"
+            android:text="Gender"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/profil38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp"
+            android:text="Male"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>-->
+      <!--  <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/recyclerGender"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"/>-->
+    <!--    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/profil4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="6dp"
+                android:paddingTop="6dp"
+                android:text="Location"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/profil49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="6dp"
+                android:paddingTop="6dp"
+                android:text="Kisii"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"/></LinearLayout>-->
+       <!-- <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/recyclerLocation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"/>-->
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/profil5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="6dp"
+                android:paddingTop="6dp"
+                android:text="About"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"/> </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/recyclerAbout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/profil6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="6dp"
+                android:paddingTop="6dp"
+                android:text="Intersts"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"/> </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/recyclerInterests"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"/>-->
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#40b4f1"/>
+        <TextView
+            android:id="@+id/gydfuh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp"
+            android:text="About"
+            android:layout_marginStart="5dp"
+            android:textColor="#40b4f1"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/about_prof"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="6dp"
+            android:text="I am a dedicated persorn in all my endevours and focus on humanitarian activities like helping the needy"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:background="#40b4f1"/>
+
+    <TextView
+        android:id="@+id/ftus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="6dp"
+        android:paddingTop="6dp"
+        android:text="Location"
+        android:layout_marginStart="5dp"
+        android:textColor="#40b4f1"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/location_prof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="6dp"
+        android:paddingTop="6dp"
+        android:text="Kisii"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:background="#40b4f1"/>
+
+    <TextView
+        android:id="@+id/ftusDGDU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="6dp"
+        android:paddingTop="6dp"
+        android:text="Website"
+        android:layout_marginStart="5dp"
+        android:textColor="#40b4f1"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/website_prof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="6dp"
+        android:paddingTop="6dp"
+        android:text="Ricodigitalcomputersolutions.co.ke"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:textColor="#EA1717"
+        android:textSize="18sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:background="#40b4f1"/>
+    <TextView
+        android:id="@+id/pvfngmd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="6dp"
+        android:paddingTop="6dp"
+        android:text="Interests"
+        android:layout_marginStart="5dp"
+        android:textColor="#40b4f1"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/profil49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="6dp"
+        android:paddingTop="6dp"
+        android:text="Hunger, Education,Health"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:background="#40b4f1"/>
+
+
+
+
+</LinearLayout>

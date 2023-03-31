@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contactActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--     <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+             <ImageView
+                   android:id="@+id/imageView6"
+                   android:layout_width="60dp"
+                   android:layout_height="50dp"
+                   android:layout_marginTop="7dp"
+                   app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+               <TextView
+                   android:id="@+id/textView17"
+                   android:layout_width="219dp"
+                   android:layout_height="52dp"
+                   android:layout_marginTop="7dp"
+                   android:layout_marginEnd="132dp"
+                   android:paddingStart="40dp"
+                   android:paddingTop="3dp"
+                   android:text="Contact us"
+                   android:textColor="#40b4f1"
+                   android:textSize="32sp"
+                   android:textStyle="bold"/></LinearLayout>-->
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:paddingStart="40dp"
+            android:paddingTop="3dp"
+            android:gravity="center"
+            android:text="To send donation request contact us "
+            android:textColor="#40b4f1"
+            android:textSize="24sp"/>
+
+           <TextView
+               android:id="@+id/textView18"
+               android:layout_width="350dp"
+               android:layout_height="40dp"
+               android:layout_marginTop="40dp"
+               android:paddingStart="10dp"
+               android:paddingTop="10dp"
+               android:text="Email"
+               android:textColor="@color/black"
+               android:textSize="20sp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.5"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+
+           <TextView
+               android:id="@+id/callEmai"
+               android:layout_width="350dp"
+               android:layout_height="50dp"
+               android:layout_marginTop="10dp"
+               android:ems="10"
+               android:textStyle="bold"
+               android:text="derfedfederrick@gmail.com"
+               android:textColor="@color/black"
+               android:textSize="20sp"
+               android:paddingStart="10dp"/>
+
+
+           <TextView
+               android:id="@+id/callWhatsapp"
+               android:layout_width="350dp"
+               android:layout_height="50dp"
+               android:layout_marginTop="10dp"
+               android:drawableStart="@drawable/whatsapp"
+               android:ems="10"
+               android:textSize="20sp"
+               android:paddingTop="12dp"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:text="0791088006"
+               android:paddingStart="10dp"
+               android:layout_marginBottom="50dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.5"
+               app:layout_constraintStart_toStartOf="parent"/>
+
+           <!--<?xml version="1.0" encoding="utf-8"?>
+   <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="65dp"
+       tools:context=".CategoryFragment">
+
+       <androidx.core.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:fillViewport="true"
+           android:layout_marginTop="10dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+
+               <ImageView
+                   android:id="@+id/food"
+                   android:layout_width="120dp"
+                   android:layout_height="120dp"
+                   android:layout_marginStart="30dp"
+                   android:layout_marginTop="5dp"
+                   android:src="@drawable/chakula"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+               <TextView
+                   android:id="@+id/textView8"
+                   android:layout_width="120dp"
+                   android:layout_height="30dp"
+                   android:layout_marginStart="30dp"
+                   android:text="Hunger"
+                   android:textAlignment="center"
+                   android:textColor="@color/black"
+                   android:textSize="18sp"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/food" />
+
+               <TextView
+                   android:id="@+id/textView9"
+                   android:layout_width="300dp"
+                   android:layout_height="40dp"
+                   android:layout_marginTop="52dp"
+                   android:text="Select your interest"
+                   android:textAlignment="center"
+                   android:textColor="#40b4f1"
+                   android:textSize="20sp"
+                   android:textStyle="bold"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.5"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <ImageView
+                   android:id="@+id/masomo"
+                   android:layout_width="120dp"
+                   android:layout_height="120dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginEnd="30dp"
+                   android:src="@drawable/masomo"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toBottomOf="@id/textView9" />
+
+               <TextView
+                   android:id="@+id/textView11"
+                   android:layout_width="120dp"
+                   android:layout_height="30dp"
+                   android:layout_marginEnd="30dp"
+                   android:text="Education"
+                   android:textAlignment="center"
+                   android:textColor="@color/black"
+                   android:textSize="18sp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/masomo" />
+
+               <ImageView
+                   android:id="@+id/health"
+                   android:layout_width="120dp"
+                   android:layout_height="120dp"
+                   android:layout_marginStart="30dp"
+                   android:layout_marginTop="8dp"
+                   android:src="@drawable/hosi"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
+
+               <TextView
+                   android:id="@+id/textView12"
+                   android:layout_width="120dp"
+                   android:layout_height="30dp"
+                   android:layout_marginStart="30dp"
+                   android:text="Health"
+                   android:textAlignment="center"
+                   android:textColor="@color/black"
+                   android:textSize="18sp"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/health"
+                   tools:layout_editor_absoluteX="61dp" />
+
+
+
+               <ImageView
+                   android:id="@+id/imageView10"
+                   android:layout_width="120dp"
+                   android:layout_height="120dp"
+                   android:layout_marginTop="8dp"
+                   android:layout_marginEnd="30dp"
+                   android:src="@drawable/mazingira"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/textView11"
+                   tools:layout_editor_absoluteX="251dp" />
+
+               <TextView
+                   android:id="@+id/textView16"
+                   android:layout_width="120dp"
+                   android:layout_height="30dp"
+                   android:layout_marginEnd="30dp"
+                   android:text="Environment"
+                   android:textAlignment="center"
+                   android:textColor="@color/black"
+                   android:textSize="18sp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/imageView10"
+                   tools:layout_editor_absoluteX="263dp" />
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+       </androidx.core.widget.NestedScrollView>
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/cat_rec"
+           android:layout_marginRight="6dp"
+           android:layout_marginLeft="6dp"
+           android:background="@drawable/search_bg"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintStart_toStartOf="parent"/>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompleteprofileActivity">
+
+  <!--  <androidx.core.widget.NestedScrollView
+        android:id="@+id/completeprofileVertical"
+        android:layout_width="412dp"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_marginBottom="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:paddingTop="10dp"
+                android:text="Complete your profile"
+                android:textColor="#40B4F1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView57"
+                app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+          <TextView
+                android:id="@+id/textView58"
+                android:text="Select your interest"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:paddingStart="10dp"
+                android:paddingTop="4dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner4" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:paddingStart="10dp"
+                android:paddingTop="4dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Location"
+                app:layout_constraintTop_toBottomOf="@id/spinner5" />
+
+          <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/search_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+
+            <TextView
+                android:id="@+id/txtView90"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:paddingStart="10dp"
+                android:paddingTop="4dp"
+                android:text="Username"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10dp"
+                android:paddingTop="4dp"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/username"
+                tools:layout_editor_absoluteX="66dp"
+                tools:layout_editor_absoluteY="330dp" />
+
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:hint="Username"
+                android:drawableStart="@drawable/ic_baseline_account_circle_24"
+                android:paddingStart="10dp"
+                android:background="@drawable/search_bg"
+                android:paddingTop="6dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtView90" />
+            <EditText
+                android:id="@+id/admin_email2"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/search_bg"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView33" />
+
+
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10dp"
+                android:paddingTop="4dp"
+                android:text="Contact"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/admin_email2"
+                tools:layout_editor_absoluteX="66dp"
+                tools:layout_editor_absoluteY="330dp" />
+            <EditText
+                android:id="@+id/admin_phone"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/search_bg"
+                android:drawableStart="@drawable/ic_baseline_phone_24"
+                android:ems="10"
+                android:hint="0791088006"
+                android:inputType="phone"
+                android:paddingStart="20dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView34" />
+
+
+
+           <TextView
+                android:id="@+id/textView_about"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:paddingStart="10dp"
+                android:paddingTop="4dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="About"
+                app:layout_constraintTop_toBottomOf="@+id/admin_phone" />
+
+            <EditText
+                android:id="@+id/about_me"
+                android:hint="About"
+                android:inputType="textPersonName"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/search_bg"
+                android:paddingTop="4dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_about" />
+
+
+            <TextView
+                android:id="@+id/textView61"
+                android:text="Gender"
+                app:layout_constraintTop_toBottomOf="@id/about_me"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:paddingStart="10dp"
+                android:paddingTop="4dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <Spinner
+                android:id="@+id/spinner5"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/search_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView61" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:id="@+id/selectedCard"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView58">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvInterests"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+              <Button
+                android:id="@+id/button7"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/loginbutton"
+                android:text="SUBMIT"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/admin_phone"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Complete Profile "
+            android:textAlignment="center"
+            android:textColor="#40b4f1"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/textView1000"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:text="Fullname"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/registerName"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:drawableStart="@drawable/ic_baseline_account_circle_24"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/search_bg"
+            android:ems="10"
+            android:hint="Fullname"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/admin_email"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_bg"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:text="Contact"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/registerPhone"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/search_bg"
+            android:paddingStart="10dp"
+            android:drawableStart="@drawable/ic_baseline_phone_24"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="phone"/>
+
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:text="About"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/admin_pass"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_bg"
+           android:ems="10"
+            android:hint="About"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:text="Website"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+
+        <EditText
+            android:id="@+id/confirm_pass"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_bg"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:ems="10"
+            android:hint="website URL"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Location"/>
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/search_bg"/>
+
+
+
+        <TextView
+            android:id="@+id/textVie"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:text="Select your interests"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <!--  <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginStart="50dp"
+             android:layout_marginEnd="10dp"
+             android:layout_marginTop="1dp">
+             <CheckBox
+                 android:id="@+id/isHUnger"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="8dp"
+                 android:layout_marginEnd="20dp"
+                 android:text="Hunger"
+                 android:textColor="#40b4f1"/>
+
+             <CheckBox
+                 android:id="@+id/isHealth"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="8dp"
+                 android:layout_marginEnd="5dp"
+                 android:text="Health"
+                 android:textColor="#40b4f1"/></LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginStart="50dp"
+                 android:layout_marginEnd="10dp"
+                 android:layout_marginTop="1dp">
+             <CheckBox
+                 android:id="@+id/isEducation"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="8dp"
+                 android:layout_marginEnd="5dp"
+                 android:text="Education"
+                 android:textColor="#40b4f1"/>
+
+             <CheckBox
+                 android:id="@+id/isEnvironment"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="8dp"
+                 android:layout_marginEnd="5dp"
+                 android:text="Environment"
+                 android:textColor="#40b4f1"/>
+
+
+         </LinearLayout>-->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:id="@+id/selectedCard"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvInterests"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>-->
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:visibility="gone"
+            android:id="@+id/progressSignup"/>
+
+        <Button
+            android:id="@+id/add_admin"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/proceed_btn"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

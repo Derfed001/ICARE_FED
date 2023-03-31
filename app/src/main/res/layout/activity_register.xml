@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Register "
+            android:textAlignment="center"
+            android:textColor="#40b4f1"
+            android:textSize="24sp"/>
+
+     <!--   <TextView
+            android:id="@+id/textView1000"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:text="Fullname"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/registerName"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:drawableStart="@drawable/ic_baseline_account_circle_24"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/search_bg"
+            android:ems="10"
+            android:hint="Fullname"
+            android:inputType="textPersonName"/>-->
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/admin_email"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_bg"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:textSize="18sp"/>
+
+      <!--  <TextView
+            android:id="@+id/phone"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:text="Contact"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/registerPhone"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/search_bg"
+            android:paddingStart="10dp"
+            android:drawableStart="@drawable/ic_baseline_phone_24"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="phone"/>-->
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:text="Password"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/admin_pass"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_bg"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:text="Confirm password"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+
+        <EditText
+            android:id="@+id/confirm_pass"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_bg"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:ems="10"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:textSize="18sp"/>
+
+
+     <!--   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="1dp">
+            <CheckBox
+                android:id="@+id/isTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:text="Register As Donor"
+                android:textColor="#40b4f1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/confirm_pass" />
+
+            <CheckBox
+                android:id="@+id/isStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:text="Register as Beneficiary"
+                android:textColor="#40b4f1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/isTeacher"
+                app:layout_constraintTop_toBottomOf="@+id/confirm_pass" />
+
+        </LinearLayout>-->
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="5dp"
+            android:text="By clicking Signup you agree to our terms and conditions"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/add_admin"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/proceed_btn"
+            android:text="Signup"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="10dp"
+                android:text="Already have an account"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_admin"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign in"
+                android:textAlignment="center"
+                android:textColor="#40b4f1"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/mmww"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:visibility="gone"
+            android:id="@+id/progressSignup"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
